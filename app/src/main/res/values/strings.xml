@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">LinkedInHelper</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="label_linkedin_helper">LinkedIn Helper</string>
+    <string name="label_sign_in">Sign In</string>
+    <string name="label_hi_there">Hi there! Nice to see you again.</string>
+    <string name="label_email">Email</string>
+    <string name="label_password">Password</string>
+    <string name="label_forgot_password">Forgot password?</string>
+    <string name="label_sign_up">Sign Up</string>
+    <string name="label_have_an_account">Have an account?</string>
+    <string name="label_agree_to">I agree to the</string>
+    <string name="label_terms_of_service">Terms of service</string>
+    <string name="label_and">and</string>
+    <string name="label_privacy_policy">Privacy Policy</string>
+    <string name="label_searching_for">Searching for…</string>
+    <string name="label_export">Export</string>
+    <string name="label_favorites">Favorites…</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+</resources>
