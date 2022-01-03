@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/image_id"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_margin="3dp"
+        android:elevation="3dp"
+        android:src="@mipmap/ic_linkedin"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_txt_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:text="Name/Company name"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/image_id"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/role_txt_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:text="Role"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        app:layout_constraintStart_toEndOf="@+id/image_id"
+        app:layout_constraintTop_toBottomOf="@+id/title_txt_id" />
+
+    <TextView
+        android:id="@+id/location_txt_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:text="Location"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/image_id"
+        app:layout_constraintTop_toBottomOf="@+id/role_txt_id" />
+
+    <TextView
+        android:id="@+id/work_txt_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:text="Company"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/image_id"
+        app:layout_constraintTop_toBottomOf="@+id/location_txt_id" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
