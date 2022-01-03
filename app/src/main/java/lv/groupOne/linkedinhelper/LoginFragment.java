@@ -30,6 +30,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener{
     EditText loginEmail;
     EditText loginPassword;
     Button signIn;
+    TextView signUp;
     FirebaseAuth fAuth;
     View view;
 
@@ -55,6 +56,8 @@ public class LoginFragment extends Fragment implements View.OnClickListener{
         loginPassword = view.findViewById(R.id.txtLoginPassword);
         signIn = view.findViewById(R.id.btnSignIn);
         signIn.setOnClickListener(this);
+        signUp = view.findViewById(R.id.lblLoginSignUp);
+        signUp.setOnClickListener(this);
 
         return view;
     }
@@ -62,11 +65,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener{
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        TextView signUp = requireActivity().findViewById(R.id.lblLoginSignUp);
-        signUp.setOnClickListener(v -> {
-            requireActivity().getSupportFragmentManager().findFragmentById(R.id.auth_fragment_container);
-            setFragment(new RegisterFragment());
-        });
+
     }
 
     protected void setFragment(Fragment fragment) {
@@ -80,7 +79,6 @@ public class LoginFragment extends Fragment implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
-        Toast.makeText(requireContext().getApplicationContext(), "sign in clicked", Toast.LENGTH_LONG).show();
         if(v.getId() == R.id.btnSignIn){
             String inputEmail = loginEmail.getText().toString().trim();
             String inputPassword = loginPassword.getText().toString().trim();
@@ -107,6 +105,9 @@ public class LoginFragment extends Fragment implements View.OnClickListener{
                     }
                 }
             });
+        }else if(v.getId() == R.id.lblLoginSignUp){
+            requireActivity().getSupportFragmentManager().findFragmentById(R.id.auth_fragment_container);
+            setFragment(new RegisterFragment());
         }
     }
 }
