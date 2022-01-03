@@ -48,7 +48,6 @@
     <string name="todo">TODO</string>
     <string name="name_company_name">Name/Company name</string>
     <string name="role">Role</string>
-    <string name="location">Location</string>
-    <string name="company">Company</string>
+    <string name="metadata">MetaData</string>
 >>>>>>> ParseAdapterModelItem
 </resources>

@@ -29,7 +29,7 @@ public class ParseItemAdapter extends RecyclerView.Adapter<ParseItemAdapter.View
 
     @Override
     public ParseItemAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.parse_item, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_search, parent, false);
         return new ViewHolder(view);
     }
 
@@ -38,8 +38,7 @@ public class ParseItemAdapter extends RecyclerView.Adapter<ParseItemAdapter.View
         ParseItemModel parseItemModel = parseItemModelArrayList.get(position);
         holder.title_txt.setText(parseItemModel.getTitle());
         holder.role_txt.setText(parseItemModel.getRole());
-        holder.location_txt.setText(parseItemModel.getLocation());
-        holder.work_txt.setText(parseItemModel.getWork());
+        holder.metadata_txt.setText(parseItemModel.getMetadata());
         Picasso.get().load(parseItemModel.getImageLink()).into(holder.imageView);
 
     }
@@ -52,15 +51,14 @@ public class ParseItemAdapter extends RecyclerView.Adapter<ParseItemAdapter.View
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
             ImageView imageView;
-            TextView title_txt,role_txt,location_txt,work_txt;
+            TextView title_txt,role_txt,metadata_txt;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             imageView = itemView.findViewById(R.id.image_id);
             title_txt = itemView.findViewById(R.id.title_txt_id);
             role_txt = itemView.findViewById(R.id.role_txt_id);
-            location_txt = itemView.findViewById(R.id.location_txt_id);
-            work_txt = itemView.findViewById(R.id.work_txt_id);
+            metadata_txt = itemView.findViewById(R.id.metadata_txt_id);
         }
 
         @Override

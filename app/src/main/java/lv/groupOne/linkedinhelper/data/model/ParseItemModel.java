@@ -1,16 +1,15 @@
 package lv.groupOne.linkedinhelper.data.model;
 
 public class ParseItemModel {
-    String title,role,location,work,imageLink;
+    String title,role,metadata,imageLink;
 
     public ParseItemModel() {
     }
 
-    public ParseItemModel(String title, String role, String location, String work, String imageLink) {
+    public ParseItemModel(String title, String role, String metadata, String imageLink) {
         this.title = title;
         this.role = role;
-        this.location = location;
-        this.work = work;
+        this.metadata = metadata;
         this.imageLink = imageLink;
     }
 
@@ -30,20 +29,12 @@ public class ParseItemModel {
         this.role = role;
     }
 
-    public String getLocation() {
-        return location;
+    public String getMetadata() {
+        return metadata;
     }
 
-    public void setLocation(String location) {
-        this.location = location;
-    }
-
-    public String getWork() {
-        return work;
-    }
-
-    public void setWork(String work) {
-        this.work = work;
+    public void setMetadata(String metadata) {
+        this.metadata = metadata;
     }
 
     public String getImageLink() {

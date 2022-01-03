@@ -133,24 +133,14 @@
                             app:layout_constraintTop_toBottomOf="@+id/title_txt_id" />
 
                         <TextView
-                            android:id="@+id/location_txt_id"
+                            android:id="@+id/metadata_txt_id"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="110dp"
-                            android:text="@string/location"
+                            android:text="@string/metadata"
                             android:textSize="12sp"
                             app:layout_constraintStart_toEndOf="@+id/image_id"
                             app:layout_constraintTop_toBottomOf="@+id/role_txt_id" />
-
-                        <TextView
-                            android:id="@+id/work_txt_id"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="110dp"
-                            android:text="@string/company"
-                            android:textSize="12sp"
-                            app:layout_constraintStart_toEndOf="@+id/image_id"
-                            app:layout_constraintTop_toBottomOf="@+id/location_txt_id" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
                     <CheckBox
                         android:id="@+id/checkBox"
