@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "162130542529",
+    "project_id": "linkedinhelper-c5957",
+    "storage_bucket": "linkedinhelper-c5957.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162130542529:android:5dfdd83a71e0be51637940",
+        "android_client_info": {
+          "package_name": "lv.groupOne.linkedinhelper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "162130542529-ad1b2dqjvlno7f5t2b8nsg0efhhfcjqq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuwTUQqCyM8CLbU0N_mYuerKnG2Wu6wPM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "162130542529-ad1b2dqjvlno7f5t2b8nsg0efhhfcjqq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
