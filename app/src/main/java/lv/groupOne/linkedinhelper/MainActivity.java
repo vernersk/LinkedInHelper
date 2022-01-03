@@ -13,5 +13,4 @@ public class MainActivity extends AppCompatActivity{
         startActivity(new Intent(this, AuthActivity.class));
         setContentView(R.layout.activity_auth);
     }
-
 }
